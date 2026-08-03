@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enes &amp; Emine — Nişan Töreni</title>
+<meta name="description" content="26 Eylül 2026 Cumartesi, saat 18.00 — Laviva Events, Polatlı/Ankara">
+<meta property="og:title" content="Enes & Emine — Nişan Töreni">
+<meta property="og:description" content="26 Eylül 2026 Cumartesi, 18.00 — Laviva Events, Polatlı/Ankara">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2019;
+    --ivory:#F6F2EA;
+    --paper:#FBF9F4;
+    --gold:#AE8A4B;
+    --olive:#6E7C5E;
+    --muted:#8B8578;
+    --line:rgba(174,138,75,.35);
+    --display:'Cormorant Garamond', Georgia, serif;
+    --script:'Petit Formal Script', cursive;
+    --ui:'Jost', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:var(--ui);
+    font-weight:300;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--gold);color:var(--paper)}
+  a{color:inherit}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:2px}
+
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+    color:var(--muted);font-weight:400;
+  }
+  h2{
+    font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,5vw,2.4rem);
+    letter-spacing:.06em;margin:.4rem 0 1.6rem;
+  }
+  section{padding:clamp(64px,10vw,110px) 0}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100svh;display:grid;place-items:center;position:relative;
+    background:var(--paper);padding:40px 20px;
+  }
+  .frame{position:absolute;inset:18px;pointer-events:none}
+  .frame rect{
+    fill:none;stroke:var(--gold);stroke-width:1;
+    stroke-dasharray:1200;stroke-dashoffset:1200;
+    animation:draw 2.6s cubic-bezier(.6,.05,.2,1) forwards;
+  }
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .hero-inner{text-align:center;position:relative;z-index:1}
+  .hero-inner>*{opacity:0;animation:rise .9s ease forwards}
+  .sprig{width:38px;color:var(--gold);animation-delay:1.2s}
+  .kicker{
+    font-family:var(--display);font-size:clamp(1.5rem,6vw,2.3rem);
+    letter-spacing:.42em;text-transform:uppercase;margin:22px 0 6px;
+    animation-delay:1.45s;padding-left:.42em;
+  }
+  .dateline{
+    font-size:.78rem;letter-spacing:.3em;color:var(--muted);
+    animation-delay:1.6s;text-transform:uppercase;
+  }
+  .names{
+    font-family:var(--script);font-size:clamp(3rem,13vw,5.4rem);
+    line-height:1.15;margin:26px 0 18px;font-weight:400;
+    animation-delay:1.8s;
+  }
+  .names .amp{color:var(--gold)}
+  .hero-meta{
+    font-family:var(--display);font-style:italic;font-size:1.15rem;
+    color:var(--muted);animation-delay:2s;
+  }
+  .scroll-cue{
+    position:absolute;bottom:34px;left:50%;transform:translateX(-50%);
+    font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);
+    opacity:0;animation:rise .9s 2.4s ease forwards;
+  }
+  .scroll-cue::after{
+    content:"";display:block;width:1px;height:38px;margin:10px auto 0;
+    background:linear-gradient(var(--gold),transparent);
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+  /* ---------- ORTAK ---------- */
+  .center{text-align:center}
+  .rule{
+    display:flex;align-items:center;justify-content:center;gap:14px;
+    color:var(--gold);margin:0 auto;
+  }
+  .rule::before,.rule::after{content:"";height:1px;width:70px;background:var(--line)}
+
+  /* ---------- GERİ SAYIM ---------- */
+  .countdown{display:flex;justify-content:center;gap:clamp(14px,6vw,52px);flex-wrap:wrap}
+  .unit{min-width:64px}
+  .unit b{
+    display:block;font-family:var(--display);font-weight:300;
+    font-size:clamp(2.4rem,9vw,3.6rem);line-height:1;
+    font-variant-numeric:tabular-nums;
+  }
+  .unit span{font-size:.65rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+
+  /* ---------- DETAY ---------- */
+  .card{
+    background:var(--paper);border:1px solid var(--line);
+    padding:clamp(28px,6vw,46px);text-align:center;
+  }
+  .big-date{
+    font-family:var(--display);font-size:clamp(2rem,8vw,3rem);
+    letter-spacing:.12em;margin-bottom:.2rem;
+  }
+  .families{
+    display:flex;justify-content:center;align-items:center;gap:clamp(20px,8vw,60px);
+    margin-top:34px;padding-top:30px;border-top:1px solid var(--line);
+  }
+  .families h3{font-family:var(--display);font-weight:400;font-size:1.4rem;letter-spacing:.14em}
+  .families p{font-family:var(--display);font-style:italic;color:var(--muted)}
+  .heart{color:var(--gold);font-size:1.1rem}
+
+  .btn{
+    display:inline-block;font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;
+    padding:15px 30px;border:1px solid var(--gold);color:var(--ink);
+    text-decoration:none;background:transparent;cursor:pointer;
+    font-family:var(--ui);transition:background .35s ease,color .35s ease;
+  }
+  .btn:hover{background:var(--gold);color:var(--paper)}
+  .btn-row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+
+  /* ---------- GALERİ ---------- */
+  .gallery{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:10px;
+  }
+  @media(min-width:640px){ .gallery{grid-template-columns:repeat(3,1fr);gap:14px} }
+  .gallery figure{
+    margin:0;aspect-ratio:3/4;overflow:hidden;background:var(--paper);
+    border:1px solid var(--line);position:relative;cursor:zoom-in;
+    padding:0;
+  }
+  .gallery figure.buyuk{grid-column:span 2;aspect-ratio:4/3}
+  @media(min-width:640px){ .gallery figure.buyuk{grid-row:span 2;aspect-ratio:auto} }
+  .gallery img{
+    position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block;
+    opacity:0;transform:scale(1.04);
+    transition:opacity 1s ease,transform 1s cubic-bezier(.6,.05,.2,1);
+  }
+  .gallery img.yuklendi{opacity:1;transform:none}
+  .gallery figure::after{
+    content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:linear-gradient(to top,rgba(27,32,25,.28),transparent 45%);
+    opacity:0;transition:opacity .5s ease;
+  }
+  .gallery figure:hover::after,.gallery figure:focus-visible::after{opacity:1}
+  .gallery figure:hover img{transform:scale(1.06)}
+  .ph{
+    position:absolute;inset:0;z-index:0;
+    background:linear-gradient(100deg,var(--paper) 30%,#fff 50%,var(--paper) 70%);
+    background-size:220% 100%;animation:parla 1.8s linear infinite;
+  }
+  @keyframes parla{to{background-position:-220% 0}}
+  .ph.yok{display:none}
+
+  /* Lightbox */
+  #lb{
+    position:fixed;inset:0;background:rgba(20,24,19,.96);display:none;
+    z-index:60;place-items:center;
+  }
+  #lb.on{display:grid}
+  #lb .sahne{position:relative;display:grid;place-items:center;padding:64px 16px}
+  #lb img{max-width:min(92vw,900px);max-height:82vh;object-fit:contain;
+    box-shadow:0 30px 80px rgba(0,0,0,.45);animation:rise .5s ease}
+  .lb-btn{
+    position:absolute;background:none;border:1px solid rgba(246,242,234,.35);
+    color:var(--ivory);width:46px;height:46px;display:grid;place-items:center;
+    cursor:pointer;border-radius:50%;font-size:1rem;
+    transition:background .3s ease,border-color .3s ease;
+  }
+  .lb-btn:hover{background:rgba(246,242,234,.14);border-color:var(--ivory)}
+  #lbPrev{left:12px;top:50%;transform:translateY(-50%)}
+  #lbNext{right:12px;top:50%;transform:translateY(-50%)}
+  #lbClose{top:18px;right:18px;position:fixed}
+  #lbSayac{
+    position:fixed;bottom:26px;left:50%;transform:translateX(-50%);
+    color:var(--ivory);font-size:.7rem;letter-spacing:.28em;opacity:.65;
+  }
+
+  /* ---------- KONUM ---------- */
+  .map{
+    width:100%;aspect-ratio:16/10;border:1px solid var(--line);
+    filter:grayscale(.55) sepia(.15);
+  }
+  .venue{font-family:var(--display);font-size:1.7rem;letter-spacing:.16em;margin-bottom:.3rem}
+  .addr{font-family:var(--display);font-style:italic;color:var(--muted);margin-bottom:26px}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--paper);border-top:1px solid var(--line);text-align:center}
+  .closing{
+    font-family:var(--display);font-style:italic;font-size:clamp(1.1rem,3.5vw,1.4rem);
+    color:var(--ink);max-width:34ch;margin:0 auto 26px;line-height:1.8;
+  }
+  .sig{font-family:var(--script);font-size:2rem;color:var(--gold)}
+
+  /* ---------- ZARF AÇILIŞI ---------- */
+  body.kilitli{overflow:hidden}
+  body.kilitli .hero-inner>*,
+  body.kilitli .frame rect,
+  body.kilitli .scroll-cue{animation-play-state:paused}
+
+  .zarf-katman{
+    position:fixed;inset:0;z-index:100;display:grid;place-content:center;
+    gap:26px;justify-items:center;background:var(--ivory);
+    transition:opacity .9s ease .9s,visibility 0s 1.8s;
+  }
+  .zarf-katman.bitti{opacity:0;visibility:hidden;pointer-events:none}
+
+  .zarf{
+    position:relative;width:min(340px,80vw);aspect-ratio:3/2;
+    background:none;border:0;padding:0;cursor:pointer;
+    perspective:1100px;
+  }
+  .zarf-arka{
+    position:absolute;inset:0;background:var(--paper);
+    border:1px solid var(--line);
+  }
+  .kart{
+    position:absolute;left:6%;width:88%;bottom:8%;
+    background:#fff;border:1px solid var(--line);
+    padding:20px 14px;text-align:center;z-index:2;
+    transform:translateY(0);transition:transform 1s cubic-bezier(.6,.05,.2,1) .55s;
+  }
+  .kart .k1,.kart .k3{display:block}
+  .kart .k1{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  .kart .k2{font-family:var(--script);font-size:1.7rem;line-height:1.2;margin:6px 0 4px}
+  .kart .k3{font-family:var(--display);font-style:italic;color:var(--gold);font-size:.9rem}
+  .zarf-on{
+    position:absolute;inset:auto 0 0 0;height:62%;z-index:3;
+    background:var(--paper);border:1px solid var(--line);
+    clip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+  }
+  .zarf-on::before,.zarf-on::after{
+    content:"";position:absolute;top:0;width:52%;height:100%;
+    background:linear-gradient(135deg,rgba(174,138,75,.10),transparent 60%);
+  }
+  .zarf-on::before{left:0;clip-path:polygon(0 0,100% 100%,0 100%)}
+  .zarf-on::after{right:0;clip-path:polygon(100% 0,100% 100%,0 100%)}
+  .kapak{
+    position:absolute;inset:0 0 auto 0;height:52%;z-index:4;
+    background:var(--paper);border:1px solid var(--line);
+    clip-path:polygon(0 0,100% 0,50% 100%);
+    transform-origin:top center;
+    transition:transform 1s cubic-bezier(.7,0,.3,1),z-index 0s .45s;
+  }
+  .muhur{
+    position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);
+    width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--paper);
+    display:grid;place-items:center;font-size:1.1rem;z-index:5;
+    transition:opacity .35s ease,transform .35s ease;
+  }
+  .zarf.acik .kapak{transform:rotateX(180deg);z-index:1}
+  .zarf.acik .muhur{opacity:0;transform:translate(-50%,-50%) scale(.6)}
+  .zarf.acik .kart{transform:translateY(-46%)}
+  .zarf-ipucu{
+    font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);
+    animation:nefes 2.6s ease-in-out infinite;
+  }
+  .zarf.acik ~ .zarf-ipucu{opacity:0;transition:opacity .3s}
+  @keyframes nefes{0%,100%{opacity:.45}50%{opacity:1}}
+
+  /* ---------- FOTOĞRAF GÖNDERME ---------- */
+  .drop{
+    border:1px dashed var(--line);background:var(--paper);
+    padding:clamp(30px,7vw,52px) 24px;text-align:center;transition:background .3s,border-color .3s;
+  }
+  .drop.uzerinde{border-color:var(--gold);background:#fff}
+  .drop p{color:var(--muted);font-size:.9rem;margin-top:10px}
+  .liste{list-style:none;margin-top:22px;font-size:.85rem}
+  .liste li{
+    display:flex;justify-content:space-between;gap:14px;padding:9px 2px;
+    border-bottom:1px solid var(--line);color:var(--muted);
+  }
+  .liste li b{font-weight:400;color:var(--ink);display:flex;align-items:center;gap:12px;min-width:0}
+  .liste li .ad{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .liste .kucuk{width:38px;height:38px;object-fit:cover;border:1px solid var(--line);flex:none}
+  .liste .ok{color:var(--olive)}
+  .liste .hata{color:#A2503F}
+
+  /* ---------- ÜST ŞERİT ---------- */
+  .topbar{
+    position:fixed;top:0;left:0;right:0;z-index:40;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:12px clamp(16px,4vw,32px);
+    background:rgba(246,242,234,.86);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+    transform:translateY(-102%);transition:transform .5s cubic-bezier(.6,.05,.2,1);
+  }
+  .topbar.gorunur{transform:none}
+  .topbar .marka{font-family:var(--script);font-size:1.2rem;white-space:nowrap}
+  .topbar nav{display:flex;gap:clamp(12px,3vw,26px);overflow-x:auto;scrollbar-width:none}
+  .topbar nav::-webkit-scrollbar{display:none}
+  .topbar a{
+    font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);
+    text-decoration:none;white-space:nowrap;padding:6px 0;position:relative;
+    transition:color .3s ease;
+  }
+  .topbar a::after{
+    content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);
+    transition:width .35s ease;
+  }
+  .topbar a:hover{color:var(--ink)}
+  .topbar a:hover::after{width:100%}
+  @media(max-width:520px){ .topbar .marka{display:none} .topbar nav{width:100%;justify-content:space-between} }
+
+  /* ---------- BİLDİRİM ---------- */
+  .toast{
+    position:fixed;left:50%;bottom:26px;transform:translate(-50%,120%);
+    background:var(--ink);color:var(--ivory);padding:13px 26px;
+    font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;z-index:80;
+    transition:transform .5s cubic-bezier(.6,.05,.2,1);
+  }
+  .toast.gorunur{transform:translate(-50%,0)}
+
+  /* ---------- DOKU ---------- */
+  body::before{
+    content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.35;
+    background-image:radial-gradient(rgba(110,124,94,.16) .5px,transparent .5px);
+    background-size:3px 3px;
+  }
+
+  /* ---------- SCROLL REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+    .hero-inner>*,.scroll-cue{opacity:1}
+    .frame rect{stroke-dashoffset:0}
+    .reveal{opacity:1;transform:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= ZARF AÇILIŞI ================= -->
+<div class="zarf-katman" id="zarfKatman">
+  <button class="zarf" id="zarf" aria-label="Davetiyeyi aç">
+    <span class="zarf-arka"></span>
+    <span class="kart">
+      <span class="k1">Nişan Töreni</span>
+      <span class="k2" style="display:block">Enes &amp; Emine</span>
+      <span class="k3">26 Eylül 2026</span>
+    </span>
+    <span class="zarf-on"></span>
+    <span class="kapak"></span>
+    <span class="muhur">&#9825;</span>
+  </button>
+  <p class="zarf-ipucu" id="zarfIpucu">Davetiyeyi açmak için dokunun</p>
+</div>
+
+<!-- ================= ÜST ŞERİT ================= -->
+<div class="topbar" id="topbar">
+  <span class="marka">Enes &amp; Emine</span>
+  <nav aria-label="Sayfa bölümleri">
+    <a href="#detaylar">Tören</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#fotograf-gonder">Fotoğraf</a>
+    <a href="#konum">Konum</a>
+  </nav>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <svg class="frame" preserveAspectRatio="none" viewBox="0 0 100 100" aria-hidden="true">
+    <rect x="1" y="1" width="98" height="98" vector-effect="non-scaling-stroke"/>
+  </svg>
+
+  <div class="hero-inner">
+    <svg class="sprig" viewBox="0 0 24 40" fill="none" stroke="currentColor" stroke-width=".9" aria-hidden="true">
+      <path d="M12 39V6"/>
+      <path d="M12 12c0-4 4-6 8-6 0 4-3 7-8 6zM12 12c0-4-4-6-8-6 0 4 3 7 8 6z"/>
+      <path d="M12 22c0-4 4-6 8-6 0 4-3 7-8 6zM12 22c0-4-4-6-8-6 0 4 3 7 8 6z"/>
+      <path d="M12 6c0-3 2-5 2-5s2 2 2 5-2 4-2 4-2-1-2-4z"/>
+    </svg>
+    <p class="kicker">Nişan Töreni</p>
+    <p class="dateline">26 &middot; 09 &middot; 2026</p>
+    <h1 class="names">Enes <span class="amp">&amp;</span> Emine</h1>
+    <p class="hero-meta">Laviva Events &middot; Polatlı, Ankara</p>
+  </div>
+
+  <a class="scroll-cue" href="#geri-sayim">Aşağı kaydırın</a>
+</header>
+
+<!-- ================= GERİ SAYIM ================= -->
+<section id="geri-sayim" class="center">
+  <div class="wrap reveal">
+    <p class="eyebrow">O güne kalan</p>
+    <h2>Geri Sayım</h2>
+    <div class="countdown" id="cd" aria-live="off">
+      <div class="unit"><b id="d">—</b><span>Gün</span></div>
+      <div class="unit"><b id="h">—</b><span>Saat</span></div>
+      <div class="unit"><b id="m">—</b><span>Dakika</span></div>
+      <div class="unit"><b id="s">—</b><span>Saniye</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DETAYLAR ================= -->
+<section id="detaylar">
+  <div class="wrap reveal">
+    <div class="center"><p class="eyebrow">Davetlisiniz</p><h2>Tören Detayları</h2></div>
+    <div class="card">
+      <p class="big-date">26 Eylül 2026</p>
+      <p class="eyebrow">Cumartesi &middot; Saat 18.00</p>
+
+      <div class="families">
+        <div><h3>AKDORA</h3><p>Ailesi</p></div>
+        <div class="heart">&#9825;</div>
+        <div><h3>DURAN</h3><p>Ailesi</p></div>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn" id="ics">Takvime ekle</button>
+        <a class="btn" id="rsvp" href="#" target="_blank" rel="noopener">Katılacağımı bildir</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERİ ================= -->
+<section id="galeri">
+  <div class="wrap reveal">
+    <div class="center"><p class="eyebrow">Onlardan kareler</p><h2>Galeri</h2></div>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Fotoğraf görüntüleyici">
+  <div class="sahne">
+    <img alt="">
+    <button class="lb-btn" id="lbPrev" aria-label="Önceki fotoğraf">&#8249;</button>
+    <button class="lb-btn" id="lbNext" aria-label="Sonraki fotoğraf">&#8250;</button>
+  </div>
+  <button class="lb-btn" id="lbClose" aria-label="Kapat">&#10005;</button>
+  <span id="lbSayac"></span>
+</div>
+
+<!-- ================= FOTOĞRAF GÖNDER ================= -->
+<section id="fotograf-gonder">
+  <div class="wrap reveal">
+    <div class="center">
+      <p class="eyebrow">Sizden gelenler</p>
+      <h2>Fotoğrafınızı Gönderin</h2>
+    </div>
+
+    <div class="drop" id="drop">
+      <p class="eyebrow" style="color:var(--ink)">Fotoğrafları buraya bırakın</p>
+      <p>Telefondan çektiğiniz kareleri bize ulaştırın; hepsi Enes ve Emine'nin albümüne düşer.</p>
+      <div class="btn-row">
+        <button class="btn" id="secBtn">Fotoğraf seç</button>
+        <a class="btn" id="waFoto" href="#" target="_blank" rel="noopener">WhatsApp'tan gönder</a>
+      </div>
+      <input type="file" id="dosya" accept="image/*,video/*" multiple hidden>
+    </div>
+    <ul class="liste" id="liste"></ul>
+  </div>
+</section>
+
+<!-- ================= KONUM ================= -->
+<section id="konum">
+  <div class="wrap reveal center">
+    <p class="eyebrow">Buluşma yeri</p>
+    <h2>Konum</h2>
+    <p class="venue">LAVİVA EVENTS</p>
+    <p class="addr">Gülveren, Nasrettin Hoca Blv. No:87, Polatlı/Ankara</p>
+    <iframe class="map" loading="lazy" title="Laviva Events konumu"
+      src="https://maps.google.com/maps?q=Laviva%20Events%20Nasrettin%20Hoca%20Bulvar%C4%B1%20No%3A87%20Polatl%C4%B1%20Ankara&z=15&output=embed"></iframe>
+    <div class="btn-row">
+      <a class="btn" target="_blank" rel="noopener"
+         href="https://www.google.com/maps/dir/?api=1&destination=Laviva+Events+Nasrettin+Hoca+Bulvar%C4%B1+No%3A87+Polatl%C4%B1+Ankara">Yol tarifi al</a>
+      <button class="btn" id="adresKopyala">Adresi kopyala</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap reveal" style="padding-top:70px;padding-bottom:70px">
+    <div class="rule">&#9825;</div>
+    <p class="closing" style="margin-top:26px">
+      Bu özel günümüzde sizleri de aramızda görmekten mutluluk duyarız.
+    </p>
+    <p class="sig">Enes &amp; Emine</p>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   AYARLAR — sadece burayı düzenlemen yeterli
+   ============================================================ */
+const AYAR = {
+  tarih: "2026-09-26T18:00:00+03:00",   // etkinlik başlangıcı
+  telefon: "905417316562",              // WhatsApp: ülke kodu + numara, + ve boşluk yok
+  cloudName: "xbyhofpt",                // Cloudinary cloud name (boş bırakırsan sadece WhatsApp görünür)
+  uploadPreset: "i7hs6moc",             // Cloudinary unsigned upload preset adı
+  fotograflar: [                        // fotograflar/ klasörüne aynı isimle at
+    "fotograflar/1.jpeg",
+    "fotograflar/2.jpeg",
+    "fotograflar/3.jpeg",
+    "fotograflar/4.jpeg",
+    "fotograflar/5.jpeg",
+    "fotograflar/6.jpeg"
+  ]
+};
+
+/* ---- Geri sayım ---- */
+const hedef = new Date(AYAR.tarih).getTime();
+const el = id => document.getElementById(id);
+function tik(){
+  const fark = hedef - Date.now();
+  if(fark <= 0){
+    el('cd').innerHTML = '<p style="font-family:var(--display);font-size:1.6rem;font-style:italic">Bugün o gün 🤍</p>';
+    return clearInterval(sayac);
+  }
+  const g = Math.floor(fark/86400000),
+        s = Math.floor(fark/3600000)%24,
+        d = Math.floor(fark/60000)%60,
+        n = Math.floor(fark/1000)%60;
+  el('d').textContent = g;
+  el('h').textContent = String(s).padStart(2,'0');
+  el('m').textContent = String(d).padStart(2,'0');
+  el('s').textContent = String(n).padStart(2,'0');
+}
+tik(); const sayac = setInterval(tik, 1000);
+
+/* ---- Bildirim ---- */
+const toast = document.getElementById('toast');
+let toastZaman;
+function bildir(mesaj){
+  toast.textContent = mesaj;
+  toast.classList.add('gorunur');
+  clearTimeout(toastZaman);
+  toastZaman = setTimeout(()=>toast.classList.remove('gorunur'), 2800);
+}
+
+/* ---- Galeri ---- */
+const g = document.getElementById('gallery');
+const acik = [];   // yüklenebilen fotoğrafların sırası
+AYAR.fotograflar.forEach((src,i)=>{
+  const fig = document.createElement('figure');
+  if(i === 0) fig.classList.add('buyuk');
+  fig.tabIndex = 0;
+  fig.setAttribute('role','button');
+  fig.setAttribute('aria-label',`Fotoğraf ${i+1} — büyüt`);
+  fig.innerHTML = `<span class="ph"></span><img src="${src}" alt="Enes ve Emine — fotoğraf ${i+1}" loading="lazy">`;
+  const img = fig.querySelector('img'), ph = fig.querySelector('.ph');
+  img.addEventListener('load', ()=>{ img.classList.add('yuklendi'); ph.classList.add('yok'); acik.push(src); });
+  img.addEventListener('error', ()=>{ fig.remove(); });
+  const ac = ()=>{ if(img.complete && img.naturalWidth) lbAc(src); };
+  fig.addEventListener('click', ac);
+  fig.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); ac(); } });
+  g.appendChild(fig);
+});
+
+/* ---- Lightbox ---- */
+const lb = document.getElementById('lb');
+const lbImg = lb.querySelector('img');
+const lbSayac = document.getElementById('lbSayac');
+let lbIndex = 0;
+function lbAc(src){
+  lbIndex = acik.indexOf(src);
+  lbGoster();
+  lb.classList.add('on');
+  document.body.classList.add('kilitli');
+}
+function lbGoster(){
+  lbImg.src = acik[lbIndex];
+  lbSayac.textContent = `${lbIndex+1} / ${acik.length}`;
+}
+function lbKaydir(yon){
+  lbIndex = (lbIndex + yon + acik.length) % acik.length;
+  lbGoster();
+}
+function lbKapat(){ lb.classList.remove('on'); document.body.classList.remove('kilitli'); }
+document.getElementById('lbNext').addEventListener('click', e=>{ e.stopPropagation(); lbKaydir(1); });
+document.getElementById('lbPrev').addEventListener('click', e=>{ e.stopPropagation(); lbKaydir(-1); });
+document.getElementById('lbClose').addEventListener('click', lbKapat);
+lb.addEventListener('click', e=>{ if(e.target === lb || e.target.classList.contains('sahne')) lbKapat(); });
+document.addEventListener('keydown', e=>{
+  if(!lb.classList.contains('on')) return;
+  if(e.key === 'Escape') lbKapat();
+  if(e.key === 'ArrowRight') lbKaydir(1);
+  if(e.key === 'ArrowLeft') lbKaydir(-1);
+});
+
+/* ---- WhatsApp ile katılım bildirimi ---- */
+document.getElementById('rsvp').href =
+  `https://wa.me/${AYAR.telefon}?text=` +
+  encodeURIComponent("Merhaba! 26 Eylül'deki nişan törenine katılacağım. Tebrikler! 🤍");
+
+/* ---- Takvime ekle (.ics) ---- */
+document.getElementById('ics').addEventListener('click', ()=>{
+  const ics = [
+    'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//nisan//TR','BEGIN:VEVENT',
+    'UID:' + Date.now() + '@nisan',
+    'DTSTART:20260926T150000Z',
+    'DTEND:20260926T180000Z',
+    'SUMMARY:Enes & Emine Nişan Töreni',
+    'LOCATION:Laviva Events\\, Gülveren\\, Nasrettin Hoca Blv. No:87\\, Polatlı/Ankara',
+    'DESCRIPTION:Nişan törenimize bekleriz.',
+    'END:VEVENT','END:VCALENDAR'
+  ].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([ics], {type:'text/calendar'}));
+  a.download = 'nisan-toreni.ics';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  bildir('Takvim dosyası indirildi');
+});
+
+/* ---- Üst şerit ---- */
+const topbar = document.getElementById('topbar');
+const hero = document.querySelector('.hero');
+new IntersectionObserver(([e])=>{
+  topbar.classList.toggle('gorunur', !e.isIntersecting);
+},{threshold:0}).observe(hero);
+
+/* ---- Adresi kopyala ---- */
+document.getElementById('adresKopyala').addEventListener('click', async ()=>{
+  const adres = 'Laviva Events, Gülveren, Nasrettin Hoca Blv. No:87, Polatlı/Ankara';
+  try{
+    await navigator.clipboard.writeText(adres);
+    bildir('Adres kopyalandı');
+  }catch{
+    bildir('Kopyalanamadı — adresi elle seçin');
+  }
+});
+
+/* ---- Zarf açılışı ---- */
+const zarf = document.getElementById('zarf');
+const katman = document.getElementById('zarfKatman');
+const azHareket = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.body.classList.add('kilitli');
+function zarfiAc(){
+  zarf.classList.add('acik');
+  setTimeout(()=>{
+    katman.classList.add('bitti');
+    document.body.classList.remove('kilitli');
+  }, azHareket ? 0 : 1500);
+}
+zarf.addEventListener('click', zarfiAc, {once:true});
+if(azHareket) zarfiAc();
+
+/* ---- Misafir fotoğrafları ---- */
+const drop = document.getElementById('drop');
+const dosya = document.getElementById('dosya');
+const liste = document.getElementById('liste');
+const cloudVar = AYAR.cloudName && AYAR.uploadPreset;
+
+document.getElementById('waFoto').href =
+  `https://wa.me/${AYAR.telefon}?text=` +
+  encodeURIComponent("Merhaba! Nişandan/sizden birkaç fotoğraf göndermek istiyorum 🤍");
+
+if(!cloudVar){
+  document.getElementById('secBtn').style.display = 'none';
+} else {
+  document.getElementById('secBtn').addEventListener('click', ()=>dosya.click());
+  dosya.addEventListener('change', ()=>yukle(dosya.files));
+
+  ['dragenter','dragover'].forEach(t=>drop.addEventListener(t,e=>{
+    e.preventDefault(); drop.classList.add('uzerinde');
+  }));
+  ['dragleave','drop'].forEach(t=>drop.addEventListener(t,e=>{
+    e.preventDefault(); drop.classList.remove('uzerinde');
+  }));
+  drop.addEventListener('drop', e => yukle(e.dataTransfer.files));
+}
+
+async function yukle(files){
+  let basarili = 0;
+  for(const f of files){
+    const li = document.createElement('li');
+    const onizleme = f.type.startsWith('image')
+      ? `<img class="kucuk" src="${URL.createObjectURL(f)}" alt="">` : '';
+    li.innerHTML = `<b>${onizleme}<span class="ad">${f.name}</span></b><span class="durum">gönderiliyor…</span>`;
+    liste.appendChild(li);
+    const durum = li.querySelector('.durum');
+    try{
+      const fd = new FormData();
+      fd.append('file', f);
+      fd.append('upload_preset', AYAR.uploadPreset);
+      const tur = f.type.startsWith('video') ? 'video' : 'image';
+      const r = await fetch(`https://api.cloudinary.com/v1_1/${AYAR.cloudName}/${tur}/upload`, {method:'POST', body:fd});
+      if(!r.ok) throw new Error();
+      durum.textContent = 'gönderildi ✓';
+      durum.className = 'durum ok';
+      basarili++;
+    }catch(err){
+      durum.textContent = 'gönderilemedi — tekrar deneyin';
+      durum.className = 'durum hata';
+    }
+  }
+  if(basarili) bildir(basarili + ' fotoğraf gönderildi — teşekkürler');
+}
+
+/* ---- Scroll reveal ---- */
+const io = new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+</script>
+</body>
+</html>
